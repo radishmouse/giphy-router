@@ -31,6 +31,8 @@ class GiphyApp extends React.Component {
     }
 
     render() {
+        // Never, ever, everrrrrr try to .setState() inside of a render.
+        // It causes an infinite loop :(
         return (
             <div>                
                 {

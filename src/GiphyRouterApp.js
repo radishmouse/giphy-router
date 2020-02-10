@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-    BrowserRouter as Router,
+    BrowserRouter as Router, // Router *must* wrap around Link and Route!
     Link,
     Route
 } from 'react-router-dom';
@@ -13,6 +13,8 @@ function GiphyRouterApp() {
 
         <Router>
             <ul>
+                {/* <li><a href="https://amazon.com">The Devil</a></li> */}
+                {/* <li><a href="/giphy/antelope">antelope</a></li> */}
                 <li><Link to="/giphy/dog">dog</Link></li>
                 <li><Link to="/giphy/cat">cat</Link></li>
                 <li><Link to="/giphy/fish">fish</Link></li>
